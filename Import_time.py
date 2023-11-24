@@ -1,9 +1,12 @@
-Import time
-# Start the timer
-start_time = time.time()
-# Loop from 1 to 100,000
+import time
+
+# Inicia el temporizador
+start_time = time.perf_counter()
+
+# Itera desde 1 hasta 100.000
 for number in range(1, 100001):
- # Calculate the elapsed time
- elapsed_time = time.time() - start_time
- # Print the current number and the elapsed time
- print(f"Number: {number}, Elapsed Time: {elapsed_time:.2f} seconds")
+    # Calcula el tiempo transcurrido
+    elapsed_time = time.perf_counter() - start_time
+
+    # Imprime el número actual y el tiempo transcurrido
+    print(f"Número: {number}, Tiempo transcurrido: {elapsed_time:.2f} segundos")
